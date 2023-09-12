@@ -12,7 +12,7 @@ void draw() {
        
        x += 40;
      }
-     y += 25;
+     y += 15;
      if(scaleSet == 1){
        x = -50;
      }else{
@@ -25,9 +25,9 @@ void draw() {
 
 void scale(int x, int y, int r, int g, int b){
        
-       r = (int)(Math.random()*40);
-       g = (int)(Math.random()*50);
-       b = (int)(Math.random()*190);
+       r = (int)(Math.random()*30);
+       g = (int)(Math.random()*30);
+       b = (int)(Math.random()*180);
        fill(r,g,b);
        noStroke();
        
@@ -36,9 +36,9 @@ void scale(int x, int y, int r, int g, int b){
        curveVertex(x,  y);
        curveVertex(x+20,  y-20);
        curveVertex(x+40,  y);
-       curveVertex(x+25, y+20);
+       curveVertex(x+25, y+10);
        curveVertex(x+20, y+50);
-       curveVertex(x+15, y+20);
+       curveVertex(x+15, y+10);
        curveVertex(x, y);
        curveVertex(x+20, y-20);
        curveVertex(x+20, y-20);
