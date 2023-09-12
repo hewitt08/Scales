@@ -3,15 +3,15 @@ void setup() {
   noLoop();
 }
 void draw() {
-  scale(-50, -50, 0, 0, 0);
+  scale(-50, -50, 0, 0, 0, 1);
 }
-void scale(int x, int y, int r, int g, int b){
-  while (y < 500){
+void scale(int x, int y, int r, int g, int b, int scaleSet){
+  while (y < 550){
      while (x < 500){
        
-       r = (int)(Math.random()*100);
-       g = (int)(Math.random()*100);
-       b = (int)(Math.random()*100);
+       r = (int)(Math.random()*40);
+       g = (int)(Math.random()*50);
+       b = (int)(Math.random()*190);
        fill(r,g,b);
        
        noStroke();
@@ -34,10 +34,12 @@ void scale(int x, int y, int r, int g, int b){
        x += 40;
      }
      y += 25;
-     if (y/120 == 1){
-       x = -30;
-     }else{
+     if(scaleSet == 1){
        x = -50;
+     }else{
+       x = -30;
      }
+     scaleSet = scaleSet*-1;
+     
    }
 }
