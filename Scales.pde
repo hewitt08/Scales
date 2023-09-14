@@ -25,8 +25,8 @@ void draw() {
 
 void scale(int x, int y, int r, int g, int b){
        
-       r = (int)(Math.random()*40);
-       g = (int)(Math.random()*40);
+       r = (int)(Math.random()*30);
+       g = (int)(Math.random()*30);
        b = (int)(Math.random()*220);
        fill(r,g,b);
        noStroke();
